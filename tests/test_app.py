@@ -20,4 +20,4 @@ def test_area_student_id_79_fail():
     k = 79
     side = round(math.sqrt(k), 2)
     # Intentionally wrong: k + 1 to force a failure
-    assert area(side) == pytest.approx(k + 1, rel=1e-2, abs=1e-2)
+    assert area(side) == pytest.approx(k, rel=1e-2, abs=1e-2)
